@@ -12,3 +12,4 @@ A lightweight app for knowing & measuring what cooking ingredients you have on h
 * UPC Scan
 * Volume/amount management
 * Recipe matching
+* Measurement networking

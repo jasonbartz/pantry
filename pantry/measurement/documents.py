@@ -37,3 +37,21 @@ class MeasurementNetwork(Document):
     # A sorted list of measurements on the increasing line
     #   0 index is the largest, (n) is the smallest
     measurements_decreased          = fields.SortedListField()
+
+class MeasurementISO(BaseModel):
+    '''
+    Represents a category of measurement
+    '''
+    pass
+    
+class MeasurementType(BaseModel):
+    '''
+    A normalized representation of a measurement, eg. milliliters. 
+    
+    The actual amount is represented at the item level.
+    '''
+    # Volume, Weight, etc.
+    size_meta           = fields.StringField()
+    
+    # Kind of measurement, US, Metric, UK
+    #iso    
